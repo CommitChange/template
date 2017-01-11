@@ -5,7 +5,7 @@ module.exports = {
   , 'cssnano']
 , 'local-plugins' : true
 , 'autoprefixer' : {browsers: 'last 2 versions'}
-, input: 'index.css'
+, input: 'page.css'
 , output: 'build.css'
 }
 

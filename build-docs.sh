@@ -1,11 +1,11 @@
 #!/bin/bash
 
-echo "making docs directory if it doesn't exist..."
-mkdir -p docs
 echo "copying index.html into docs/index.html..."
 cp index.html docs/index.html
-echo "browserifying index.js into docs/index.js..."
-browserify -v -t babelify index.js | uglifyjs > docs/index.js
-echo "compiling index.css into docs/build.css"
-npm run build-css
+echo "browserifying page.js into docs/page.js..."
+browserify -v -t babelify page.js | uglifyjs > docs/page.js
+echo "building page.css into build.css..."
+postcss -c postcss.js -l
+echo "copying build.css into docs/build.css"
+cp build.css docs/build.css
 
