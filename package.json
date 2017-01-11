@@ -13,8 +13,18 @@
   },
   "license": "MIT",
   "dependencies": {
+    "autoprefixer": "^6.6.1",
+    "babel-jest": "^18.0.0",
+    "babel-polyfill": "^6.20.0",
+    "budo": "^9.4.1",
+    "cssnano": "^3.10.0",
     "ff-core": "0.0.4",
     "flyd": "0.2.2",
+    "jest": "^18.1.0",
+    "normalize.css": "^5.0.0",
+    "postcss": "^5.2.9",
+    "postcss-cli": "^2.6.0",
+    "postcss-import": "^9.1.0",
     "ramda": "0.23.0",
     "snabbdom": "0.6.1"
   },
