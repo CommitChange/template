@@ -17,11 +17,11 @@ function view(state) {
 }
 
 const patch = snabbdom.init([
-  require("snabbdom/modules/class")
-, require("snabbdom/modules/style")
-, require("snabbdom/modules/props")
-, require("snabbdom/modules/eventlisteners")
-, require("snabbdom/modules/attributes")
+  require("snabbdom/modules/class").default
+, require("snabbdom/modules/style").default
+, require("snabbdom/modules/props").default
+, require("snabbdom/modules/eventlisteners").default
+, require("snabbdom/modules/attributes").default
 ])
 
 const container = document.querySelector('#container')
